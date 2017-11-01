@@ -11,14 +11,6 @@ import { TableValue } from '../src/components/table-value';
 const stories = storiesOf('Table', module);
 
 stories
-  .add('headings', () => (
-    <Table>
-      <TableHeadings>
-        <TableHeader label="Header1" />
-        <TableHeader label="Header2" />
-      </TableHeadings>
-    </Table>
-  ))
   .add('full', () => (
     <Table>
       <TableHeadings>
@@ -41,21 +33,13 @@ stories
         <TableValue element="Value 1" />
         <TableValue element="Value 2" />
       </TableRow>
-      <TableRow idx={5}>
-        <TableValue element="Value 1" />
-        <TableValue element="Value 2" />
-      </TableRow>
-      <TableRow idx={6}>
-        <TableValue element="Value 1" />
-        <TableValue element="Value 2" />
-      </TableRow>
-      <TableRow idx={7}>
-        <TableValue element="Value 1" />
-        <TableValue element="Value 2" />
-      </TableRow>
-      <TableRow idx={8}>
-        <TableValue element="Value 1" />
-        <TableValue element="Value 2" />
-      </TableRow>
+    </Table>
+  ))
+  .add('headings', () => (
+    <Table>
+      <TableHeadings>
+        <TableHeader label="Header1" />
+        <TableHeader label="Header2" />
+      </TableHeadings>
     </Table>
   ));
