@@ -1,0 +1,4 @@
+{
+  "presets": ["react", "babel-preset-latest"],
+  "plugins": ["transform-flow-strip-types"]
+}
