@@ -12,11 +12,15 @@ const stories = storiesOf('Table', module);
 
 stories
   .add('full', () => (
-    <Table>
+    <Table paper>
       <TableHeadings>
         <TableHeader label="Header1" />
         <TableHeader label="Header2" />
       </TableHeadings>
+      <TableRow idx={0}>
+        <TableValue element="Value 1" />
+        <TableValue element="Value 2" />
+      </TableRow>
       <TableRow idx={1}>
         <TableValue element="Value 1" />
         <TableValue element="Value 2" />
@@ -25,11 +29,31 @@ stories
         <TableValue element="Value 1" />
         <TableValue element="Value 2" />
       </TableRow>
-      <TableRow idx={3} highlight>
+      <TableRow idx={3}>
         <TableValue element="Value 1" />
         <TableValue element="Value 2" />
       </TableRow>
-      <TableRow idx={4}>
+    </Table>
+  ))
+  .add('full no paper', () => (
+    <Table>
+      <TableHeadings>
+        <TableHeader label="Header1" />
+        <TableHeader label="Header2" />
+      </TableHeadings>
+      <TableRow idx={0}>
+        <TableValue element="Value 1" />
+        <TableValue element="Value 2" />
+      </TableRow>
+      <TableRow idx={1}>
+        <TableValue element="Value 1" />
+        <TableValue element="Value 2" />
+      </TableRow>
+      <TableRow idx={2}>
+        <TableValue element="Value 1" />
+        <TableValue element="Value 2" />
+      </TableRow>
+      <TableRow idx={3}>
         <TableValue element="Value 1" />
         <TableValue element="Value 2" />
       </TableRow>

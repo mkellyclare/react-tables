@@ -19,7 +19,7 @@ export const TableRow = ({ children, idx, hover, borderTop, highlight }: TableRo
 const RowContainer = styled.div`
   display: flex;
   align-items: center;
-  height: 40px;
+  height: 48px;
   &:hover {
     background-color: ${props => (props.hover ? 'rgba(109, 142, 160, 0.5)' : rowColor(props))};
   }

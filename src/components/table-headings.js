@@ -20,4 +20,5 @@ const Container = styled.div`
   border-bottom: 1px solid lightgray;
   padding-top: 15px;
   padding-bottom: 5px;
+  margin-bottom: 12px;
 `;

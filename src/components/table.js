@@ -2,11 +2,15 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-export const Table = ({ children }: { children?: React.Node }) => (
+export const Table = ({ children, paper = false }: { children?: React.Node, paper?: boolean }) => (
   <Outer>
-    <Paper>
+    {paper ? (
+      <Paper>
+        <InnerTable>{children}</InnerTable>
+      </Paper>
+    ) : (
       <InnerTable>{children}</InnerTable>
-    </Paper>
+    )}
   </Outer>
 );
 
