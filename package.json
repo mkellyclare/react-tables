@@ -1,6 +1,6 @@
 {
   "name": "react-simple-tables",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Simple React Table Components",
   "main": "lib/index.js",
   "author": "Michael Kelly",
@@ -25,7 +25,9 @@
     "css-loader": "^0.28.7",
     "flow-bin": "^0.57.3",
     "flow-copy-source": "^1.2.1",
-    "prettier": "^1.7.4"
+    "prettier": "^1.7.4",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "dependencies": {
     "react-fontawesome": "^1.6.1",

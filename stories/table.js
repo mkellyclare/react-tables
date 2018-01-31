@@ -25,7 +25,7 @@ stories
         <TableValue element="Value 1" />
         <TableValue element="Value 2" />
       </TableRow>
-      <TableRow idx={3}>
+      <TableRow idx={3} highlight>
         <TableValue element="Value 1" />
         <TableValue element="Value 2" />
       </TableRow>
